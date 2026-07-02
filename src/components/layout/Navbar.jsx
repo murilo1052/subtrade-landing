@@ -1,5 +1,5 @@
 import Container from "../ui/Container";
-import { MessageCircle, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 function Navbar() {

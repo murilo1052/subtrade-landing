@@ -1,3 +1,4 @@
+import Navbar from "../components/layout/Navbar";
 import Hero from "../components/home/Hero";
 import HowItWorks from "../components/home/HowItWorks";
 import Benefits from "../components/home/Benefits";
@@ -8,11 +9,14 @@ import Footer from "../components/layout/Footer";
 function Home() {
   return (
     <>
+      <Navbar />
+
       <Hero />
       <HowItWorks />
       <Benefits />
       <FAQ />
       <Contact />
+
       <Footer />
     </>
   );
