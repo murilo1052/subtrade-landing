@@ -1,12 +1,18 @@
-import Navbar from "./components/layout/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Home from "./pages/Home";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfUse from "./pages/TermsOfUse";
 
 function App() {
   return (
-    <div className="min-h-screen bg-zinc-950 text-white">
-      <Navbar />
-      <Home />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/privacidade" element={<PrivacyPolicy />} />
+        <Route path="/termos" element={<TermsOfUse />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
